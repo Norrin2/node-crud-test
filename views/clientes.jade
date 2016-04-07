@@ -1,0 +1,23 @@
+extends layout
+
+block content
+	h1. 
+		Lista de Clientes
+	table
+		thead
+			tr 
+				th #
+				th Nome
+				th Endereço
+				th Telefone
+				th Alterar
+		tbody
+			each cliente, i in clientes
+				tr
+					td=i+1
+					td #{cliente.NOME}
+					td #{cliente.ENDERECO}
+					td #{cliente.TELEFONE}
+					td 
+						button(class="botao_altera_cliente" data-id=cliente.ID) Alterar
+         

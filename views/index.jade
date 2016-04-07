@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	head
+		script(type="text/javascript" src="js_clientside/jquery-latest.min.js")
+		script(type="text/javascript" src="js_clientside/loadforms.js")
+	h1= title
+	p Pizzaria!
+	button(id="botao_listar_cliente") Listar Clientes		
+	button(id="botao_novo_cliente") Novo Cliente		
+	div(id="conteudo")

@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	h1. 
+		Novo Cliente
+	form(name="form_inserir_cliente", action="/clientes/inserir", method="post")
+			label(for='nome') Nome:
+			input(type="text", name="nome")
+			br
+			label(for='endereco') Endereço:
+			input(type="text", name="endereco")
+			br
+			label(for='telefone') Telefone:
+			input(type="text", name="telefone")
+			br
+			input(type="submit",value="Gravar")
