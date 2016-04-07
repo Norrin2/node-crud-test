@@ -1,6 +1,7 @@
 var appRoot = require('app-root-path');
 var pool = require(appRoot + '/bin/connection/connection.js');
 
+//lists clients
 function listarClientes(callback){
   var sql = "SELECT * from clientes";
   pool.executaSql(sql,null,callback);
